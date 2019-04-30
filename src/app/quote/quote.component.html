@@ -4,7 +4,7 @@
     <div class="row" *ngFor="let quote of quotes;let i = 'index'">
         <div class="jumbotron">
           <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-        
+            
             <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
             <button class="btn btn-primary" (click)='upvoteFunction(i)'>Upvote</button>
             <p>{{quote.upvote}}</p>
