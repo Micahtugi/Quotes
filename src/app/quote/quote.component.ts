@@ -31,6 +31,12 @@ export class QuoteComponent implements OnInit {
   toogleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
+  upvoteFunction(index){
+    this.quotes[index].upvote += 1; 
+  }
+  downvoteFunction(index){
+    this.quotes[index].downvote += 1; 
+  }
 
   constructor() { }
 

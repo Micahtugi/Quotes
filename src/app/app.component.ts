@@ -8,6 +8,6 @@ import { Quote } from './quote';
 })
 export class AppComponent {
   quotes = [
-    new Quote(1,'Tugi'),
+    new Quote(1,'Tugi','Champion from the beginning'),
   ]
 }
