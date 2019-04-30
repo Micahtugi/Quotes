@@ -2,14 +2,14 @@
 <hr>
 <div class="container">
     <div class="row" *ngFor="let quote of quotes;let i = 'index'">
-        <div class="row">
+        <div class="jumbotron">
           <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
             
             <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
         </div>
         
-        <div class="row" *ngIf="quote.showDescription">
-        <app-quote-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
+        <div class="well" *ngIf="quote.showDescription">
+        <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
     </div>
     
 </div>
