@@ -7,7 +7,7 @@ import {Quote} from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes = [
-    new Quote(1,'Tugi','Champion from the beginning'),
+    new Quote(1,'Tugi','Champion from the beginning',new Date(2018,3,14)),
   ]
 
   deleteQuote(isComplete, index){
